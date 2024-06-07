@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex h-screen bg-zinc-100 dark:bg-zinc-800">
+  <aside class="w-64 bg-zinc-200 dark:bg-zinc-900 p-4">
+    <img src="https://placehold.co/200x80" alt="logo" class="mb-4">
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/50x50" alt="user-avatar" class="rounded-full mr-2">
+      <span class="text-lg">Admin123</span>
+    </div>
+    <nav>
+      <a href="#" class="flex items-center p-2 text-lg text-zinc-700 dark:text-zinc-200 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded">Dashboard</a>
+      <a href="#" class="flex items-center p-2 mt-2 text-lg text-zinc-700 dark:text-zinc-200 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded">Category</a>
+      <a href="#" class="flex items-center p-2 mt-2 text-lg text-zinc-700 dark:text-zinc-200 bg-zinc-300 dark:bg-zinc-700 rounded">Product</a>
+    </nav>
+  </aside>
+  <main class="flex-1 p-4">
+    <div class="flex">
+      <section class="w-1/3 p-4 bg-white dark:bg-zinc-700 border-r-2 border-zinc-300 dark:border-zinc-600">
+        <h2 class="text-xl font-semibold mb-4">Product</h2>
+        <form class="space-y-4">
+          <div>
+            <label class="block mb-2">Product Name</label>
+            <input type="text" class="w-full p-2 border rounded">
+          </div>
+          <div>
+            <label class="block mb-2">Product Price (Rp)</label>
+            <input type="text" class="w-full p-2 border rounded">
+          </div>
+          <div>
+            <label class="block mb-2">Product Quantity</label>
+            <input type="text" class="w-full p-2 border rounded">
+          </div>
+          <div>
+            <label class="block mb-2">Product Category</label>
+            <select class="w-full p-2 border rounded">
+              <option>Select Category</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">Product Image</label>
+            <input type="file" class="w-full p-2 border rounded">
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="mr-2">
+            <label>IsActive</label>
+          </div>
+          <div class="flex space-x-4">
+            <button type="button" class="bg-brown-500 text-white px-4 py-2 rounded">Add</button>
+            <button type="button" class="bg-brown-500 text-white px-4 py-2 rounded">Clear</button>
+          </div>
+        </form>
+      </section>
+      <section class="w-2/3 p-4 bg-white dark:bg-zinc-700">
+        <h2 class="text-xl font-semibold mb-4">Product Lists</h2>
+        <table class="w-full table-auto border-collapse">
+          <thead>
+            <tr>
+              <th class="border p-2">Name</th>
+              <th class="border p-2">IsActive</th>
+              <th class="border p-2">Image</th>
+              <th class="border p-2">Category</th>
+              <th class="border p-2">Price</th>
+              <th class="border p-2">Qty</th>
+              <th class="border p-2">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border p-2">Nasi Goreng Seafood</td>
+              <td class="border p-2"><span class="bg-green-500 text-white p-1 rounded">Active</span></td>
+              <td class="border p-2"><img src="https://placehold.co/30x30" alt="product" class="rounded"></td>
+              <td class="border p-2">Foods</td>
+              <td class="border p-2">23.000</td>
+              <td class="border p-2">30</td>
+              <td class="border p-2 flex space-x-2"><button class="text-lg">✏️</button><button class="text-lg">🗑️</button></td>
+            </tr>
+            <tr>
+              <td class="border p-2">Nasi Goreng Seafood</td>
+              <td class="border p-2"><span class="bg-red-500 text-white p-1 rounded">InActive</span></td>
+              <td class="border p-2"><img src="https://placehold.co/30x30" alt="product" class="rounded"></td>
+              <td class="border p-2">Foods</td>
+              <td class="border p-2">23.000</td>
+              <td class="border p-2">30</td>
+              <td class="border p-2 flex space-x-2"><button class="text-lg">✏️</button><button class="text-lg">🗑️</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+</div>
+  </body>
+</html>

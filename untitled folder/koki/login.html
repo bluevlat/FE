@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .bg-cream {
+        background-color: #f5f5dc;
+      }
+      .bg-light-cream {
+        background-color: #fffaf0;
+      }
+      .border-brown {
+        border-color: #8b4513;
+      }
+      .text-brown {
+        color: #8b4513;
+      }
+      .bg-brown {
+        background-color: #8b4513;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center justify-center bg-cream">
+  <div class="border border-brown bg-light-cream p-8 rounded-lg shadow-lg max-w-md w-full">
+    <img class="w-full h-48 object-cover rounded-t-lg" src="https://placehold.co/600x200" alt="Login Image">
+    <div class="p-6">
+      <h2 class="text-center text-brown text-xl font-bold mb-4">Welcome Back!<br>Login</h2>
+
+      @if($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors as $key => $value )
+                <li>{{ $value }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+      <form action="" method="POST">
+        @csrf
+        <div class="mb-4">
+          <label class="block text-brown mb-2" for="email">Email:</label>
+          <input class="w-full p-2 border border-brown rounded" type="email" id="email" name="email">
+        </div>
+        <div class="mb-4">
+          <label class="block text-brown mb-2" for="password">Password:</label>
+          <input class="w-full p-2 border border-brown rounded" type="password" id="password" name="password">
+        </div>
+        <button class="w-full bg-brown text-white p-2 rounded-lg">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

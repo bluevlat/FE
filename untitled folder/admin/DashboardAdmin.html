@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex h-screen bg-zinc-100 dark:bg-zinc-800">
+  <aside class="w-64 bg-zinc-200 dark:bg-zinc-900 p-4">
+    <img src="https://placehold.co/200x80" alt="logo" class="mb-4">
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/50x50" alt="user-avatar" class="rounded-full mr-2">
+      <span class="text-lg">Admin123</span>
+    </div>
+    <nav>
+      <a href="#" class="flex items-center p-2 text-lg text-zinc-700 dark:text-zinc-200 bg-zinc-300 dark:bg-zinc-700 rounded">Dashboard</a>
+
+      <a href="#" class="flex items-center p-2 mt-2 text-lg text-zinc-700 dark:text-zinc-200 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded">Category</a>
+
+      <a href="#" class="flex items-center p-2 mt-2 text-lg text-zinc-700 dark:text-zinc-200 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded">Product</a>
+    </nav>
+  </aside>
+  <main class="flex-1 p-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+      <div class="p-4 bg-zinc-200 dark:bg-zinc-700 rounded-md text-center shadow-md">
+        <h3 class="text-xl font-bold">55 Products</h3>
+      </div>
+      <div class="p-4 bg-zinc-200 dark:bg-zinc-700 rounded-md text-center shadow-md">
+        <h3 class="text-xl font-bold">345 Stocks</h3>
+      </div>
+      <div class="p-4 bg-zinc-200 dark:bg-zinc-700 rounded-md text-center shadow-md">
+        <h3 class="text-xl font-bold">160 Sold</h3>
+      </div>
+      <div class="p-4 bg-zinc-200 dark:bg-zinc-700 rounded-md text-center shadow-md">
+        <div class="text-lg font-semibold">Tuesday</div>
+        <div class="text-sm">27 February 2024</div>
+      </div>
+    </div>
+    <div class="bg-zinc-200 dark:bg-zinc-700 rounded-md p-4 shadow-md mb-6">
+      <h3 class="text-xl font-bold mb-4">Sales History</h3>
+      
+      <!-- tambahin chart disini buat penjualannya -->
+    </div>
+    <div class="bg-zinc-200 dark:bg-zinc-700 rounded-md p-4 shadow-md">
+      <h3 class="text-xl font-bold mb-4">Product List</h3>
+      <table class="min-w-full bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-200">
+        <thead>
+          <tr>
+            <th class="py-2 px-4 bg-zinc-300 dark:bg-zinc-700">Product Name</th>
+            <th class="py-2 px-4 bg-zinc-300 dark:bg-zinc-700">Category</th>
+            <th class="py-2 px-4 bg-zinc-300 dark:bg-zinc-700">Total of Products Sold</th>
+            <th class="py-2 px-4 bg-zinc-300 dark:bg-zinc-700">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-2 px-4">Nasi Goreng Seafood</td>
+            <td class="py-2 px-4">Foods</td>
+            <td class="py-2 px-4">29</td>
+            <td class="py-2 px-4">Rp669.000</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-4">Nasi Goreng Jumbo</td>
+            <td class="py-2 px-4">Foods</td>
+            <td class="py-2 px-4">20</td>
+            <td class="py-2 px-4">Rp500.000</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-4">Mie Goreng Aceh</td>
+            <td class="py-2 px-4">Foods</td>
+            <td class="py-2 px-4">23</td>
+            <td class="py-2 px-4">Rp529.000</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-4">Beef Curry Rice</td>
+            <td class="py-2 px-4">Foods</td>
+            <td class="py-2 px-4">15</td>
+            <td class="py-2 px-4">Rp375.000</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-4">Mineral Water</td>
+            <td class="py-2 px-4">Drinks</td>
+            <td class="py-2 px-4">30</td>
+            <td class="py-2 px-4">Rp150.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+  </body>
+</html>

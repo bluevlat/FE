@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center h-screen bg-zinc-100 dark:bg-zinc-800">
+  <div class="absolute top-4 left-4 w-10 h-10 rounded-full bg-brown-700 dark:bg-brown-600 flex items-center justify-center">
+    <span class="text-white text-xl">X</span>
+  </div>
+  <h1 class="text-xl font-bold mb-4 dark:text-white">Order Summary</h1>
+  <div class="bg-white dark:bg-zinc-700 p-8 rounded shadow-lg border border-brown-200 dark:border-brown-600">
+    <h2 class="text-lg font-bold mb-2 text-center dark:text-white">Table 05</h2>
+    <p class="text-center text-zinc-600 dark:text-zinc-400 mb-4">Dine In</p>
+    <ul class="list-decimal list-inside text-zinc-800 dark:text-zinc-200">
+      <li class="flex justify-between"><span>Nasi Goreng Seafood</span><span>2x</span></li>
+      <li class="flex justify-between"><span>Mie Goreng Aceh</span><span>1x</span></li>
+      <li class="flex justify-between"><span>Beef Curry Rice</span><span>3x</span></li>
+    </ul>
+  </div>
+  <div class="absolute top-4 right-4">
+    <button class="bg-brown-600 text-white py-2 px-4 rounded shadow-md hover:bg-brown-700 dark:bg-brown-500 dark:hover:bg-brown-600">Print</button>
+  </div>
+</div>
+  </body>
+</html>

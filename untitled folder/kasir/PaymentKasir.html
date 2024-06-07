@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="p-4 bg-zinc-50 dark:bg-zinc-800 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-4xl bg-white dark:bg-zinc-900 shadow-md rounded-lg p-4">
+    <h1 class="text-2xl font-bold mb-4">Cashier - Table 05</h1>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700">
+        <thead class="bg-zinc-200 dark:bg-zinc-700">
+          <tr>
+            <th class="text-left font-medium text-zinc-700 dark:text-zinc-300 py-2 px-4">Item</th>
+            <th class="text-left font-medium text-zinc-700 dark:text-zinc-300 py-2 px-4">Price</th>
+            <th class="text-left font-medium text-zinc-700 dark:text-zinc-300 py-2 px-4">Qty</th>
+            <th class="text-left font-medium text-zinc-700 dark:text-zinc-300 py-2 px-4">Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-zinc-300 dark:border-zinc-700">
+            <td class="py-2 px-4">Nasi Goreng Seafood</td>
+            <td class="py-2 px-4">Rp23.000</td>
+            <td class="py-2 px-4">2</td>
+            <td class="py-2 px-4">Rp46.000</td>
+          </tr>
+          <tr class="border-t border-zinc-300 dark:border-zinc-700">
+            <td class="py-2 px-4">Mie Goreng Aceh</td>
+            <td class="py-2 px-4">Rp23.000</td>
+            <td class="py-2 px-4">1</td>
+            <td class="py-2 px-4">Rp23.000</td>
+          </tr>
+          <tr class="border-t border-zinc-300 dark:border-zinc-700">
+            <td class="py-2 px-4">Beef Curry Rice</td>
+            <td class="py-2 px-4">Rp25.000</td>
+            <td class="py-2 px-4">3</td>
+            <td class="py-2 px-4">Rp75.000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="border-t border-zinc-300 dark:border-zinc-700">
+            <td class="py-2 px-4 text-right font-medium" colspan="3">Total</td>
+            <td class="py-2 px-4">Rp144.000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="flex justify-end mt-4">
+      <button class="bg-brown-600 text-white py-2 px-6 rounded-lg">Pay</button>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
